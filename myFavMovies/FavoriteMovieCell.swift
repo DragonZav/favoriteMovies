@@ -11,7 +11,7 @@ import UIKit
 class FavoriteMovieCell: UITableViewCell {
 
     @IBOutlet weak var movieTitle: UILabel!
-    @IBOutlet weak var movieLink: UIButton!
+    @IBOutlet weak var movieLink: UILabel!
     @IBOutlet weak var movieDescription: UILabel!
     @IBOutlet weak var movieImg: UIImageView!
     
@@ -23,11 +23,13 @@ class FavoriteMovieCell: UITableViewCell {
     
     func configureCell(movie: FavoriteMovie) {
         movieTitle.text = movie.title
-        movieLink.setTitle(movie.link, forState: .Normal)
+        movieLink.text = movie.link
         movieDescription.text = movie.desc
         movieImg.image = movie.getMovieImage()        
         
     }
+    
+    
 
    
 }

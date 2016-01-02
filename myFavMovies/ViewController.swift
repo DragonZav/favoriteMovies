@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -17,19 +18,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // Logo : Sepia Film Strip clip art
     // Author:  www.openclipart.org
     
-    
-    // Info entry VC Background: Movie Night
-    // Author: Ginny
-    // Website: flickr.com
-    
-    // Description VC Background: Theatre
-    // Author: Bombman
-    // Website: flickr.com
-    
-    
     @IBOutlet weak var tableView: UITableView!
     
-    var favoriteMovies = [FavoriteMovie]()
+    let dbs = DataBaseServices()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,11 +34,16 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.navigationItem.titleView = imageView
         
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        dbs.fetchAndSetResults()
+        tableView.reloadData()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("FavoriteMovieCell") as? FavoriteMovieCell {
-            let movie = favoriteMovies[indexPath.row]
+            let movie = dbs.favoriteMovies[indexPath.row]
             cell.configureCell(movie)
             return cell
         } else {
@@ -60,8 +56,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoriteMovies.count
+        return dbs.favoriteMovies.count
     }
-
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if let cell = sender as? UITableViewCell {
+            let i = tableView.indexPathForCell(cell)!.row
+            if segue.identifier == "toDetails" {
+                let vc = segue.destinationViewController as! DetailsVC
+                
+                vc.numberOfCell = i
+                
+            }
+        }
+    }
 }
-

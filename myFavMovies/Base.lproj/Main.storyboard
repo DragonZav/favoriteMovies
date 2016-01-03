@@ -264,20 +264,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="eYw-eh-cHe">
-                                <rect key="frame" x="8" y="325" width="584" height="51"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="51" id="mvG-l6-VEf"/>
-                                </constraints>
-                                <string key="text">The Shawshank Redemption was a spectular movie with a lot of charactere depth. One of my favorite quotes come from this movie, "Get busy living, or get busy dieing."</string>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Shawshank Redemption" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="1li-Uj-UdJ">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="21"/>
+                                <rect key="frame" x="0.0" y="8" width="600" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="X4T-M2-fkK"/>
                                 </constraints>
@@ -287,8 +275,15 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shawshank" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-ga-bj5">
+                                <rect key="frame" x="222" y="41" width="157" height="230"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="BrH-Qj-gRd"/>
+                                    <constraint firstAttribute="width" constant="157" id="NNa-Wh-sW8"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.someMovie.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="y4H-YP-RCt">
-                                <rect key="frame" x="0.0" y="267" width="600" height="21"/>
+                                <rect key="frame" x="242" y="276" width="117" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Xhs-MY-d3P"/>
                                 </constraints>
@@ -298,72 +293,83 @@
                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plot:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-sM-jqC">
-                                <rect key="frame" x="8" y="384" width="584" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="A0F-oa-PUS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PD0-v1-GNK">
-                                <rect key="frame" x="8" y="296" width="584" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="yyb-uu-5IL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shawshank" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-ga-bj5">
-                                <rect key="frame" x="222" y="29" width="157" height="230"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="BrH-Qj-gRd"/>
-                                    <constraint firstAttribute="width" constant="157" id="NNa-Wh-sW8"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="G1H-2h-Vmn">
-                                <rect key="frame" x="8" y="413" width="584" height="33"/>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="14"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-e1-ePd">
+                                <rect key="frame" x="8" y="305" width="584" height="207"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="e2h-M0-yxq">
+                                        <rect key="frame" x="0.0" y="0.0" width="574.5" height="101"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="PD0-v1-GNK">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="yyb-uu-5IL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="eYw-eh-cHe">
+                                                <rect key="frame" x="0.0" y="11" width="574.5" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="mvG-l6-VEf"/>
+                                                </constraints>
+                                                <string key="text">The Shawshank Redemption was a spectular movie with a lot of charactere depth. One of my favorite quotes come from this movie, "Get busy living, or get busy dieing."</string>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="9e2-a2-ijH">
+                                        <rect key="frame" x="0.0" y="111" width="568.5" height="96"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plot:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-sM-jqC">
+                                                <rect key="frame" x="0.0" y="0.0" width="40.5" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="A0F-oa-PUS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="16"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency." lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="G1H-2h-Vmn">
+                                                <rect key="frame" x="0.0" y="6" width="568.5" height="90"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="szF-9x-GQF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Lcy-Pz-IkG" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" id="45o-KX-Jit"/>
-                            <constraint firstItem="G1H-2h-Vmn" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="A0g-UT-LMO"/>
-                            <constraint firstItem="sjw-sM-jqC" firstAttribute="top" secondItem="eYw-eh-cHe" secondAttribute="bottom" constant="8" id="CKE-09-6hq"/>
-                            <constraint firstItem="eYw-eh-cHe" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="HCe-3v-Chf"/>
-                            <constraint firstItem="PD0-v1-GNK" firstAttribute="top" secondItem="y4H-YP-RCt" secondAttribute="bottom" constant="8" id="J3W-37-hA6"/>
-                            <constraint firstItem="G1H-2h-Vmn" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="LCC-lC-edK"/>
+                            <constraint firstItem="y4H-YP-RCt" firstAttribute="centerX" secondItem="Itc-9S-Ozk" secondAttribute="centerX" id="HH1-Cy-dp0"/>
+                            <constraint firstItem="0s2-e1-ePd" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="KtO-Kw-4GL"/>
                             <constraint firstItem="1li-Uj-UdJ" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" id="McL-AS-tKO"/>
                             <constraint firstAttribute="trailing" secondItem="1li-Uj-UdJ" secondAttribute="trailing" id="R75-lg-yFl"/>
-                            <constraint firstItem="PD0-v1-GNK" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="RWF-w6-7rW"/>
-                            <constraint firstAttribute="trailing" secondItem="G1H-2h-Vmn" secondAttribute="trailing" constant="8" id="UJ0-vd-9RG"/>
-                            <constraint firstAttribute="trailing" secondItem="G1H-2h-Vmn" secondAttribute="trailing" constant="8" id="UT1-G5-fIb"/>
+                            <constraint firstAttribute="trailing" secondItem="0s2-e1-ePd" secondAttribute="trailing" constant="8" id="RdG-HC-qRb"/>
                             <constraint firstItem="JBO-ga-bj5" firstAttribute="centerX" secondItem="Itc-9S-Ozk" secondAttribute="centerX" id="Zxq-ja-Y7b"/>
-                            <constraint firstItem="y4H-YP-RCt" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" id="aUJ-F9-yXf"/>
-                            <constraint firstAttribute="trailing" secondItem="y4H-YP-RCt" secondAttribute="trailing" id="bd1-gZ-Jtd"/>
                             <constraint firstItem="Xnz-EU-SpU" firstAttribute="top" secondItem="Lcy-Pz-IkG" secondAttribute="bottom" id="ctO-0N-9OY"/>
-                            <constraint firstItem="eYw-eh-cHe" firstAttribute="top" secondItem="PD0-v1-GNK" secondAttribute="bottom" constant="8" id="gjF-hl-EJ0"/>
-                            <constraint firstItem="sjw-sM-jqC" firstAttribute="leading" secondItem="Itc-9S-Ozk" secondAttribute="leading" constant="8" id="h8I-Wc-kAH"/>
-                            <constraint firstAttribute="trailing" secondItem="eYw-eh-cHe" secondAttribute="trailing" constant="8" id="i9B-EL-X1h"/>
-                            <constraint firstAttribute="trailing" secondItem="sjw-sM-jqC" secondAttribute="trailing" constant="8" id="kIf-ww-Twm"/>
-                            <constraint firstItem="JBO-ga-bj5" firstAttribute="top" secondItem="1li-Uj-UdJ" secondAttribute="bottom" constant="8" id="kXB-kx-UtB"/>
+                            <constraint firstItem="y4H-YP-RCt" firstAttribute="top" secondItem="JBO-ga-bj5" secondAttribute="bottom" constant="5" id="hC1-i1-KWg"/>
+                            <constraint firstItem="JBO-ga-bj5" firstAttribute="top" secondItem="1li-Uj-UdJ" secondAttribute="bottom" constant="12" id="kXB-kx-UtB"/>
                             <constraint firstAttribute="trailing" secondItem="Lcy-Pz-IkG" secondAttribute="trailing" id="m9J-aR-ROS"/>
-                            <constraint firstItem="G1H-2h-Vmn" firstAttribute="top" secondItem="sjw-sM-jqC" secondAttribute="bottom" constant="8" id="neP-II-fV2"/>
                             <constraint firstItem="Lcy-Pz-IkG" firstAttribute="top" secondItem="TgN-FQ-aA7" secondAttribute="bottom" id="nqQ-Bi-2ZH"/>
-                            <constraint firstAttribute="trailing" secondItem="PD0-v1-GNK" secondAttribute="trailing" constant="8" id="q1P-c5-z2y"/>
-                            <constraint firstItem="1li-Uj-UdJ" firstAttribute="top" secondItem="TgN-FQ-aA7" secondAttribute="bottom" id="xu5-dn-q1c"/>
-                            <constraint firstItem="y4H-YP-RCt" firstAttribute="top" secondItem="JBO-ga-bj5" secondAttribute="bottom" constant="8" id="yzC-uD-W6V"/>
+                            <constraint firstItem="0s2-e1-ePd" firstAttribute="top" secondItem="y4H-YP-RCt" secondAttribute="bottom" constant="8" id="rBX-6e-9af"/>
+                            <constraint firstItem="1li-Uj-UdJ" firstAttribute="top" secondItem="TgN-FQ-aA7" secondAttribute="bottom" constant="8" id="xu5-dn-q1c"/>
                         </constraints>
                     </view>
                     <connections>
@@ -376,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9o-QR-0pU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="1297"/>
+            <point key="canvasLocation" x="400" y="1270"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="McS-qQ-utw">
